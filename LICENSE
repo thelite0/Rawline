@@ -1,0 +1,758 @@
+RAWLINE PUBLIC LICENSE (RPL) v1.0
+
+Copyright © 2026 EXOFORCE and Rawline contributors.
+All rights reserved except as expressly granted under this License.
+
+============================================================
+1. DEFINITIONS
+============================================================
+
+1.1 "Rawline" means the Rawline operating system and all source code,
+kernel code, system components, build files, documentation, interfaces,
+configuration, and other materials distributed by the Licensor under
+this License.
+
+1.2 "Licensor" means the copyright holder of Rawline, initially
+EXOFORCE, and any lawful successor or assignee.
+
+1.3 "You" means the individual or legal entity exercising rights under
+this License.
+
+1.4 "Source Code" means the preferred form for making modifications,
+including source files, build scripts, dependency information,
+configuration, generated interface definitions where necessary,
+installation instructions, and other materials reasonably required to
+reproduce the relevant binary.
+
+1.5 "Object Code" means compiled, packaged, linked, or otherwise
+non-source forms of Rawline.
+
+1.6 "Modified Rawline" means Rawline or any portion of Rawline that has
+been modified, extended, adapted, replaced, or combined with code in a
+manner that creates a derivative work of Rawline.
+
+1.7 "Rawline Component" means any kernel, kernel module, core system
+service, core runtime, system library, or other component distributed
+as part of Rawline.
+
+1.8 "Application" means software that runs on Rawline through public,
+documented application interfaces, system calls, IPC protocols, command
+line interfaces, runtime APIs, or libraries intended by the Licensor
+for ordinary application development.
+
+1.9 "Public Driver API" means an interface expressly designated by the
+Licensor as a stable interface for third-party drivers.
+
+1.10 "Kernel Module" means code loaded into or linked with the Rawline
+kernel address space, regardless of whether dynamically or statically
+loaded.
+
+1.11 "Distribute" means making Rawline or Modified Rawline available to
+a third party in Source Code or Object Code form, whether separately or
+embedded in another product.
+
+1.12 "Commercial Use" means use primarily intended to generate revenue,
+commercial advantage, or other direct economic benefit.
+
+1.13 "Rawline Product" means a product or service in which Rawline
+itself, a Rawline-derived operating system, Rawline hosting, Rawline
+virtual machines, Rawline desktops, or substantially equivalent Rawline
+functionality is marketed, licensed, sold, rented, or provided as the
+product or a material selling point.
+
+1.14 "Incidental Commercial Use" means commercial use where Rawline is
+merely an underlying operating system or infrastructure layer and is
+not itself the product being sold or marketed.
+
+Examples include:
+
+(a) developing or selling an Application that runs on Rawline;
+(b) operating a website, game server, database, AI service, build
+    system, or internal workstation on Rawline;
+(c) using Rawline internally within a commercial organization; and
+(d) shipping Rawline as an underlying operating system inside a broader
+    hardware or software product whose principal product is not Rawline
+    itself.
+
+1.15 "Hosted Rawline Service" means a service that provides Rawline
+itself to third parties, including hosted Rawline virtual machines,
+remote Rawline desktops, managed Rawline installations, Rawline shell
+access, or similar offerings.
+
+1.16 "Public Use" means use of Rawline or Modified Rawline by persons
+outside Your household or organization, excluding ordinary users of
+Applications or services merely running on Rawline.
+
+1.17 "Contribution" means copyrightable material intentionally submitted
+to the Licensor for inclusion in Rawline.
+
+1.18 "Contributor" means a person or entity that submits a Contribution.
+
+1.19 "Trademarks" means "Rawline", Rawline logos, EXOFORCE marks, and
+other names or marks owned by the Licensor.
+
+
+============================================================
+2. PERSONAL AND INTERNAL USE
+============================================================
+
+2.1 You may, without payment:
+
+(a) download and run Rawline;
+(b) inspect and study its Source Code;
+(c) reproduce it for Your own use;
+(d) modify it privately;
+(e) create private forks;
+(f) use it for education, experimentation, research, development, and
+    testing; and
+(g) use it internally within an organization, including a commercial
+    organization.
+
+2.2 Commercial organizations may use Rawline internally without payment
+provided Rawline itself is not being offered as a Rawline Product.
+
+2.3 Private modifications that are not Distributed and are not used to
+provide a Hosted Rawline Service may remain private.
+
+
+============================================================
+3. APPLICATIONS AND SOFTWARE RUNNING ON RAWLINE
+============================================================
+
+3.1 Applications are not subject to this License merely because they:
+
+(a) run on Rawline;
+(b) invoke Rawline system calls;
+(c) communicate through documented IPC mechanisms;
+(d) use documented command-line interfaces;
+(e) use documented network protocols;
+(f) link, statically or dynamically, against public Rawline application
+    libraries intended for ordinary application development; or
+(g) use the Public Driver API where permitted by Section 4.
+
+3.2 Applications may be:
+
+(a) proprietary;
+(b) commercial;
+(c) free;
+(d) open source;
+(e) source available; or
+(f) licensed under any other terms chosen by their authors.
+
+3.3 Nothing in this License gives the Licensor ownership of software
+merely because that software runs on Rawline.
+
+3.4 Commercial software may be developed, sold, licensed, or operated
+on Rawline without paying the Licensor merely for using Rawline as an
+operating system.
+
+
+============================================================
+4. DRIVERS AND KERNEL MODULES
+============================================================
+
+4.1 A driver using only the documented Public Driver API may be
+proprietary or licensed under any terms chosen by its author.
+
+4.2 Use of undocumented, private, internal, unstable, or kernel-private
+interfaces may cause a work to be considered a Modified Rawline work.
+
+4.3 Every Kernel Module derived from, linked into, or loaded into the
+Rawline kernel must be licensed under this License unless the Licensor
+has separately authorized different terms.
+
+4.4 The Licensor may design Rawline so that proprietary hardware support
+can be implemented in userspace through stable public interfaces.
+
+
+============================================================
+5. NON-COMMERCIAL REDISTRIBUTION
+============================================================
+
+5.1 You may redistribute unmodified Rawline without separate permission
+only if:
+
+(a) the redistribution is non-commercial;
+(b) no fee is charged for Rawline itself;
+(c) all license and copyright notices are preserved;
+(d) the redistribution does not imply endorsement by the Licensor; and
+(e) this License accompanies the redistribution.
+
+5.2 Reasonable reimbursement of unavoidable physical media or shipping
+costs is permitted only where no profit is made from the redistribution.
+
+5.3 You may redistribute Modified Rawline without separate permission
+only if:
+
+(a) the redistribution is non-commercial;
+(b) the requirements of Sections 8 through 11 are satisfied; and
+(c) the resulting work is licensed under this License.
+
+
+============================================================
+6. COMMERCIAL USE OF RAWLINE ITSELF
+============================================================
+
+6.1 You may not, without separate written permission from the Licensor:
+
+(a) sell Rawline;
+(b) sell a Modified Rawline operating system;
+(c) commercially license Rawline or Modified Rawline;
+(d) offer Rawline as a paid operating-system distribution;
+(e) commercially distribute a fork whose product is substantially
+    Rawline itself;
+(f) operate a Hosted Rawline Service; or
+(g) otherwise monetize Rawline itself as a Rawline Product.
+
+6.2 Publication of Source Code does not by itself grant permission for
+commercial exploitation prohibited by this Section.
+
+6.3 A fully source-available commercial Rawline fork still requires a
+separate commercial agreement with the Licensor.
+
+6.4 The Licensor may grant commercial rights under separate terms,
+including royalty-bearing, revenue-sharing, flat-fee, OEM, cloud,
+enterprise, or other agreements.
+
+
+============================================================
+7. INCIDENTAL COMMERCIAL USE
+============================================================
+
+7.1 Incidental Commercial Use is permitted.
+
+7.2 Examples include:
+
+(a) commercial Applications running on Rawline;
+(b) commercial game development;
+(c) software development workstations;
+(d) commercial servers whose service is not Rawline itself;
+(e) websites hosted on Rawline;
+(f) AI inference or development workloads running on Rawline;
+(g) internal business infrastructure; and
+(h) hardware products that use Rawline merely as their underlying
+    operating system.
+
+7.3 If Rawline is distributed as part of a broader commercial product,
+any modifications made to Rawline itself remain subject to the source
+obligations of this License.
+
+7.4 This Section does not permit marketing Rawline itself as a product
+without authorization under Section 6.
+
+
+============================================================
+8. MODIFIED RAWLINE AND STRONG RECIPROCITY
+============================================================
+
+8.1 Any public Distribution of Modified Rawline must be licensed under
+this License.
+
+8.2 Any commercial or public Hosted Rawline Service based on Modified
+Rawline must comply with the source-availability requirements of this
+License in addition to obtaining any required commercial authorization.
+
+8.3 You may not impose contractual or technical terms that contradict
+the rights granted to recipients under this License.
+
+8.4 Where a combined work incorporates Rawline kernel code, Rawline core
+system code, or private Rawline interfaces in a manner creating a
+derivative work, that combined work is subject to this License.
+
+8.5 Ordinary Applications described by Section 3 are excluded from
+Section 8.4.
+
+
+============================================================
+9. COMPLETE PUBLIC SOURCE REQUIREMENT
+============================================================
+
+9.1 Whenever this License requires publication of Source Code, You must
+make the source publicly accessible to everyone without charge.
+
+9.2 The source must be hosted in a publicly accessible version-control
+repository.
+
+9.3 The repository must include, to the extent reasonably necessary:
+
+(a) all modified Source Code;
+(b) all Rawline Source Code required to build the distributed version;
+(c) build scripts;
+(d) dependency declarations;
+(e) configuration files;
+(f) compiler and toolchain requirements;
+(g) installation instructions;
+(h) packaging scripts;
+(i) patches;
+(j) relevant source-generation tools;
+(k) commit history reasonably representing the development of the
+    distributed version; and
+(l) sufficient information for a competent developer to reproduce the
+    distributed binary.
+
+9.4 You may omit passwords, private keys, credentials, private
+certificates, access tokens, and unrelated confidential information.
+
+9.5 You may not satisfy this requirement by publishing intentionally
+incomplete, non-building, obfuscated, or materially different source.
+
+
+============================================================
+10. USER MODIFICATION AND DEVICE LOCKDOWN
+============================================================
+
+10.1 If You distribute Rawline or Modified Rawline as part of a physical
+device, appliance, console, workstation, embedded product, or other
+hardware product, recipients must be reasonably capable of installing
+and running their own compliant modified Rawline builds.
+
+10.2 Where technical restrictions would otherwise prevent modified
+versions from running, You must provide a reasonable method of unlocking,
+authorizing, signing, or installing modified versions.
+
+10.3 Where reasonably required, this may include:
+
+(a) unlock procedures;
+(b) installation tools;
+(c) scripts;
+(d) documentation;
+(e) user-enrollable signing mechanisms; or
+(f) equivalent technical means.
+
+10.4 This Section does not require disclosure of private production
+signing keys where an alternative user-controlled installation or
+signing method can reasonably be provided.
+
+
+============================================================
+11. ATTRIBUTION AND FORK IDENTITY
+============================================================
+
+11.1 Copyright, license, and attribution notices must be preserved.
+
+11.2 Public distributions of Rawline or Modified Rawline must include
+prominent user-visible attribution substantially equivalent to:
+
+    "Based on Rawline"
+
+and must provide a visible link or reference to the official Rawline
+project.
+
+11.3 Appropriate locations include:
+
+(a) an About page;
+(b) System Information;
+(c) operating-system credits; or
+(d) another similarly visible system interface.
+
+11.4 Modified distributions must use a distinct product name and logo.
+
+11.5 Forks may factually state:
+
+    "Based on Rawline"
+    "Derived from Rawline"
+    "Rawline-compatible"
+
+provided such statements do not imply endorsement.
+
+11.6 Modified distributions may not use "Rawline" as their primary
+product name without separate written permission.
+
+
+============================================================
+12. TRADEMARKS
+============================================================
+
+12.1 No trademark rights are granted by this License.
+
+12.2 The Rawline name, logo, visual identity, and EXOFORCE marks may not
+be used to falsely imply that a fork, product, or service is official,
+approved, sponsored, or endorsed by the Licensor.
+
+12.3 Factual references to Rawline are permitted as described in
+Section 11.
+
+
+============================================================
+13. HOSTED SERVICES AND CLOUD USE
+============================================================
+
+13.1 Running Applications, websites, game servers, databases, internal
+systems, development environments, or other unrelated services on
+Rawline does not constitute a Hosted Rawline Service.
+
+13.2 You may not commercially or publicly provide a Hosted Rawline
+Service without separate written authorization from the Licensor.
+
+13.3 Prohibited unauthorized examples include:
+
+(a) "Rawline Cloud";
+(b) hosted Rawline virtual machines;
+(c) managed Rawline desktops;
+(d) public Rawline shell accounts;
+(e) commercial Rawline operating-system hosting;
+(f) managed Rawline installations sold as a service; and
+(g) substantially equivalent offerings.
+
+13.4 If authorization is granted for a Hosted Rawline Service using a
+Modified Rawline version, the Complete Corresponding Source of the
+version actually running must be published as required by Section 9.
+
+
+============================================================
+14. AI AND MACHINE LEARNING
+============================================================
+
+14.1 This License does not grant permission to use Rawline Source Code,
+documentation, commit history, or other Rawline materials as training,
+fine-tuning, reinforcement-learning, distillation, or dataset material
+for an artificial-intelligence or machine-learning model.
+
+14.2 Such use requires separate written permission from the Licensor.
+
+14.3 Section 14.1 does not prohibit ordinary transient use of an AI
+assistant or code-analysis tool to:
+
+(a) inspect Rawline code;
+(b) explain Rawline code;
+(c) assist a permitted user in modifying Rawline;
+(d) debug Rawline;
+(e) generate patches; or
+(f) otherwise assist with development,
+
+provided the Rawline materials are not intentionally incorporated into
+a model-training or fine-tuning dataset by the user exercising rights
+under this License.
+
+
+============================================================
+15. SECURITY RESEARCH
+============================================================
+
+15.1 Security research on Rawline is permitted subject to this Section.
+
+15.2 A researcher discovering a previously unknown vulnerability must
+make a reasonable good-faith effort to disclose the vulnerability
+privately to the Licensor before publishing technical exploitation
+details.
+
+15.3 Public disclosure is permitted after the earliest of:
+
+(a) publication of a fix;
+(b) written authorization by the Licensor; or
+(c) ninety (90) days after a complete private report was received,
+    unless the researcher and Licensor mutually agree to extend the
+    period.
+
+15.4 This Section does not prohibit ordinary discussion of already
+public vulnerabilities.
+
+
+============================================================
+16. CONTRIBUTIONS
+============================================================
+
+16.1 Unless otherwise agreed in writing, every Contribution is licensed
+to all Rawline users under this License.
+
+16.2 By intentionally submitting a Contribution for inclusion in
+Rawline, the Contributor also grants the Licensor a perpetual,
+irrevocable, worldwide, royalty-free, non-exclusive right to:
+
+(a) use the Contribution;
+(b) modify the Contribution;
+(c) sublicense the Contribution;
+(d) relicense the Contribution;
+(e) include the Contribution in proprietary editions;
+(f) commercially license the Contribution; and
+(g) distribute the Contribution under different terms.
+
+16.3 No additional payment is owed to the Contributor solely because the
+Licensor exercises the rights in Section 16.2.
+
+16.4 The Licensor may require a separate Contributor License Agreement.
+
+16.5 By submitting a Contribution, the Contributor represents that they
+have sufficient rights to make the Contribution.
+
+
+============================================================
+17. PATENT LICENSE
+============================================================
+
+17.1 Each Contributor grants recipients of Rawline a perpetual,
+worldwide, royalty-free, non-exclusive patent license to make, use,
+have made, sell, offer for sale, import, and otherwise exercise rights
+in Rawline solely to the extent that the Contributor's patent claims
+would necessarily be infringed by their Contribution.
+
+17.2 The purpose of this provision is to prevent a Contributor from
+contributing patented functionality and later demanding separate patent
+payment from lawful Rawline users for that Contribution.
+
+
+============================================================
+18. PATENT AGGRESSION
+============================================================
+
+18.1 If You or an entity under common control with You initiate patent
+litigation alleging that Rawline, a Rawline Contribution, or lawful use
+of Rawline infringes a patent owned or controlled by You, then all rights
+granted to You under this License terminate immediately.
+
+18.2 The Licensor may separately waive this Section in writing.
+
+
+============================================================
+19. NO COMMERCIAL FREE-RIDING RIGHTS
+============================================================
+
+19.1 Nothing in this License grants a right to take Rawline itself,
+rebrand it, commercialize it, and retain the resulting commercial value
+without authorization from the Licensor.
+
+19.2 The ability to inspect, modify, and redistribute Rawline for
+permitted purposes does not imply a right to commercially exploit
+Rawline itself.
+
+19.3 Commercial Applications and products merely built on top of Rawline
+remain permitted as provided elsewhere in this License.
+
+
+============================================================
+20. LICENSE VIOLATIONS AND TERMINATION
+============================================================
+
+20.1 Your rights under this License terminate automatically upon material
+violation of its terms.
+
+20.2 Except where immediate relief is reasonably necessary, You shall
+have seven (7) calendar days after receiving written notice of the
+violation to completely cure the violation.
+
+20.3 If the violation is fully cured within that period, Your rights are
+reinstated unless:
+
+(a) the violation was intentionally fraudulent;
+(b) the violation involved deliberate commercial exploitation after
+    prior notice;
+(c) You previously committed substantially the same violation; or
+(d) reinstatement would otherwise be expressly denied by the Licensor
+    as permitted by applicable law.
+
+20.4 After final termination You must cease unauthorized use,
+Distribution, and commercial exploitation of Rawline.
+
+20.5 Termination does not eliminate claims arising from conduct that
+occurred before termination.
+
+
+============================================================
+21. INJUNCTIVE AND EQUITABLE RELIEF
+============================================================
+
+21.1 Unauthorized commercial exploitation, misuse of trademarks,
+withholding of required Source Code, deliberate device lockdown, or
+unauthorized Hosted Rawline Services may cause harm not adequately
+remedied by monetary damages alone.
+
+21.2 The Licensor may seek injunctive or other equitable relief where
+permitted by law.
+
+
+============================================================
+22. WARRANTY DISCLAIMER
+============================================================
+
+22.1 RAWLINE IS PROVIDED "AS IS" AND "AS AVAILABLE."
+
+22.2 TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR AND
+CONTRIBUTORS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+NON-INFRINGEMENT, RELIABILITY, SECURITY, AND FITNESS FOR PRODUCTION USE.
+
+22.3 RAWLINE MAY CRASH, DESTROY DATA, FAIL TO BOOT, MISBEHAVE, CONTAIN
+SECURITY VULNERABILITIES, OR OTHERWISE DO THINGS THAT AN EXPERIMENTAL
+OPERATING SYSTEM IS ENTIRELY CAPABLE OF DOING.
+
+
+============================================================
+23. LIMITATION OF LIABILITY
+============================================================
+
+23.1 TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR AND
+CONTRIBUTORS SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING LOSS OF DATA,
+PROFIT, REVENUE, BUSINESS, HARDWARE AVAILABILITY, OR GOODWILL.
+
+23.2 TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE AGGREGATE LIABILITY OF
+THE LICENSOR AND CONTRIBUTORS ARISING FROM RAWLINE OR THIS LICENSE SHALL
+NOT EXCEED US$0.
+
+23.3 THE RIGHTS GRANTED UNDER THIS LICENSE ARE PROVIDED IN RELIANCE ON
+THE ABOVE ALLOCATION OF RISK.
+
+
+============================================================
+24. THIRD-PARTY SOFTWARE
+============================================================
+
+24.1 Third-party libraries, firmware, drivers, tools, fonts, runtimes,
+and other components included with or used by Rawline remain subject to
+their respective licenses.
+
+24.2 This License does not override rights or obligations imposed by
+valid third-party licenses.
+
+
+============================================================
+25. LICENSOR RIGHTS AND DUAL LICENSING
+============================================================
+
+25.1 The Licensor retains all rights not expressly granted.
+
+25.2 The Licensor may:
+
+(a) commercially license Rawline;
+(b) create proprietary Rawline editions;
+(c) enter OEM agreements;
+(d) authorize commercial forks;
+(e) authorize Hosted Rawline Services;
+(f) grant exceptions to this License;
+(g) dual-license Rawline; and
+(h) license Rawline differently to different parties.
+
+25.3 Nothing in this License requires the Licensor to publish proprietary
+changes owned or lawfully controlled by the Licensor.
+
+
+============================================================
+26. LICENSE VERSIONS
+============================================================
+
+26.1 The Licensor may publish revised versions of the Rawline Public
+License.
+
+26.2 New Rawline releases may be distributed under a newer version of
+this License.
+
+26.3 Unless expressly agreed otherwise, a copy of Rawline already
+received under a particular license version remains governed by that
+version.
+
+26.4 Continued acquisition or use of later Rawline releases constitutes
+acceptance of the license accompanying those releases.
+
+
+============================================================
+27. GOVERNING LAW AND VENUE
+============================================================
+
+27.1 This License is governed by the laws of Ukraine, without regard to
+conflict-of-law principles.
+
+27.2 The exclusive jurisdiction and venue for disputes arising from this
+License shall be the competent courts located in Kyiv, Ukraine.
+
+27.3 The United Nations Convention on Contracts for the International
+Sale of Goods does not apply.
+
+
+============================================================
+28. ASSIGNMENT
+============================================================
+
+28.1 You may not assign or transfer rights granted under this License
+without written permission from the Licensor, except where mandatory
+law provides otherwise.
+
+28.2 The Licensor may assign its rights in connection with a merger,
+acquisition, restructuring, transfer of intellectual property, or sale
+of substantially all relevant assets.
+
+
+============================================================
+29. SEVERABILITY
+============================================================
+
+29.1 If any provision of this License is held invalid or unenforceable,
+the remaining provisions remain effective.
+
+29.2 An invalid provision shall, where legally permissible, be modified
+only to the minimum extent necessary to make it enforceable while
+preserving its intended purpose.
+
+
+============================================================
+30. NO WAIVER
+============================================================
+
+Failure to enforce any provision of this License does not waive the
+Licensor's right to enforce that provision later.
+
+
+============================================================
+31. ENTIRE AGREEMENT
+============================================================
+
+This License constitutes the complete public licensing terms for Rawline
+except where the Licensor has entered into a separate written agreement
+with a particular party.
+
+
+============================================================
+32. SHORT VERSION FOR HUMANS
+============================================================
+
+This Section is explanatory. If it conflicts with the legal terms above,
+the legal terms above control.
+
+You may:
+
+- use Rawline personally;
+- study it;
+- modify it privately;
+- use it inside a company;
+- build proprietary software for it;
+- sell proprietary Applications that run on it;
+- run commercial websites and services on it;
+- write proprietary userspace drivers using public driver APIs;
+- make non-commercial forks;
+- experiment with it;
+- use AI tools to help develop it.
+
+You may not, without permission:
+
+- sell Rawline itself;
+- sell a Rawline fork;
+- rebrand Rawline and turn it into Your commercial OS;
+- sell hosted Rawline VMs/desktops/services;
+- hide source where this License requires publication;
+- lock users out of installing modified Rawline on hardware You ship;
+- call a fork "Rawline";
+- train or fine-tune an AI model on the Rawline source;
+- patent-attack Rawline while continuing to enjoy this License.
+
+If You publicly distribute a modified Rawline:
+
+- keep it non-commercial unless separately authorized;
+- publish the complete Source Code;
+- publish the build system;
+- publish the relevant history;
+- make the distributed build reproducible;
+- clearly state that it is based on Rawline;
+- use Your own name and branding.
+
+The basic rule is:
+
+    Build things ON Rawline: go ahead.
+
+    Learn from and modify Rawline for fun: go ahead.
+
+    Take Rawline itself and make money from my work:
+    talk to me first.
+
+
+============================================================
+END OF RAWLINE PUBLIC LICENSE v1.0
+============================================================

@@ -1,68 +1,124 @@
-# Prerequisites
-*.d
+# ============================================================
+# Rawline
+# ============================================================
 
-# Compiled Object files
-*.slo
-*.lo
+# Build directories
+build/
+Build/
+out/
+dist/
+cmake-build-*/
+build-*/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+compile_commands.json
+Makefile
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+
+# Object / dependency files
 *.o
 *.obj
-
-# Precompiled Headers
+*.lo
+*.slo
+*.d
+*.dwo
 *.gch
 *.pch
-
-# Linker files
 *.ilk
 
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+# Libraries
 *.a
 *.lib
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
 
 # Executables
 *.exe
 *.out
 *.app
 
-# Build directories
-build/
-Build/
-build-*/
+# Rawline / kernel build artifacts
+*.elf
+*.efi
+*.bin
+*.iso
+*.img
+*.raw
+*.map
+*.sym
 
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
+# Disk / VM images
+*.qcow
+*.qcow2
+*.vhd
+*.vhdx
+*.vmdk
 
-# Temporary files
-*.tmp
+# Debug / crash output
+*.pdb
+*.core
+core.*
+crash-*
+*.dump
+*.dmp
+
+# Logs / temporary files
 *.log
+*.tmp
+*.temp
 *.bak
 *.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
+*.swo
+*~
 .cache/
+
+# Test output
+Testing/
+test-results/
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# Package managers / dependencies
+vcpkg_installed/
+conan/
+.conan/
+_deps/
+
+# IDE / editor
+.vscode/
+.idea/
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Tool / local environment files
+.env
+.env.*
+!.env.example
+
+# Generated documentation
+docs/_build/
+doxygen/
+html/
+latex/

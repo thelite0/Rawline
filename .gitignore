@@ -53,6 +53,7 @@ rules.ninja
 *.elf
 *.efi
 *.bin
+*.rwl
 *.iso
 *.img
 *.raw
@@ -122,3 +123,7 @@ docs/_build/
 doxygen/
 html/
 latex/
+
+
+# Third-party dependencies
+third_party/limine/
